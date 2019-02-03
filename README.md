@@ -34,7 +34,7 @@ O usúario é um jogador de RPG que deseja criptografar e descriptografar mensag
 
 ### Desenho do projeto
 
-![Desenho do Projeto](Images/desenhoprojeto.png)
+![Desenho do Projeto](Images/desenhoprojeto)
 
 
 ## Parte obrigatória
