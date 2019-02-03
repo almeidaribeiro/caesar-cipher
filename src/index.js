@@ -1,36 +1,66 @@
 function cipherMessage() {
   
-  //pega o valor do input da mensagem a ser cifrada
-  let text = document.forms["textMessage"]["textMessage"].value;
-  //pega o valor do offset da mensagem a ser cifrada
-  let number = document.forms["textMessage"]["keyNumber"].value;
-  console.log(number);
+  let string = document.forms["textMessage"]["textMessage"].value;
+  
+  let offset = parseInt(document.forms["textMessage"]["keyNumber"].value);
+  
+  if (string === ""){
+    return 
+  } 
+  if (!offset || offset < 0){
+    return 
+  }
 
-  //printa o resultado da mensagem cifrada na tela de resultado cifra
-  document.getElementById("resultCipher").innerHTML = text;
 
-  // esconder tela de input cifrar e decifrar
+  var retorno = cipher.encode(offset, string);  
+  
+  document.getElementById("resultCipher").innerHTML = retorno;
+  
   document.getElementById("cipher").setAttribute("hidden", "true")
-  // mostrar tela de resultado cifrado
+ 
   document.getElementById("resultPanelCipher").removeAttribute("hidden");
-
 }
 
 function decipherMessage(){
+  
+  let string = document.forms["textMessage"]["textMessage"].value;
+  
+  let offset = document.forms["textMessage"]["keyNumber"].value;
 
-  //pega o valor do input da mensagem a ser decifrada
-  let text = document.forms["textMessage"]["textMessage"].value;
-  // pega o valor do offset da mensagem a ser decifrada
-  let number = document.forms["textMessage"]["keyNumber"].value;
-  console.log(number);
-
-
-  //printa o resultado da mensagem decifrada na tela de resultado decifra
-  document.getElementById("resultDecipher").innerHTML = text;
-
-  // esconder tela de input cifrar e decifrar
+if (string === ""){
+    return 
+  } 
+  if (!offset || offset < 0){
+    return 
+  }
+ 
+  var retorno = cipher.decode(offset, string);  
+  
+  document.getElementById("resultDecipher").innerHTML = retorno;
+  
   document.getElementById("cipher").setAttribute("hidden", "true")
-  // mostrar tela de resultado decifrado
+ 
   document.getElementById("resultPanelDecipher").removeAttribute("hidden");
+}
 
+function goBackCipher(){
+
+  document.getElementById("resultPanelCipher").setAttribute("hidden", "true")
+  
+  document.getElementById("cipher").removeAttribute("hidden");
+
+  document.getElementById("textLetter").value = ""; 
+  
+  document.getElementById("textNumber").value = "";
+}
+
+function goBackDecipher(){
+
+  document.getElementById("resultPanelDecipher").setAttribute("hidden", "true")
+  
+  document.getElementById("cipher").removeAttribute("hidden");
+
+  document.getElementById("textLetter").value = ""; 
+  
+  document.getElementById("textNumber").value = ""; 
 }

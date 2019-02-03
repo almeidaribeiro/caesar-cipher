@@ -2,12 +2,7 @@
 
 ## Prefácio
 
-O aniversário da sua mãe está se aproximando e você está organizando uma festa
-surpresa. Para manter a festa em segredo foi criado um grupo de Whatsapp com
-amigxs e familiares. O problema é que as vezes sua mãe utiliza o seu celular
-e pode ser que ela veja as suas mensagens. Como a festa é surpresa, você
-decide criar uma aplicação que permita enviar mensagens criptografadas e depois
-descriptografar. Então agora é a hora de aplicar os seus super poderes 😎
+Um grupo de amigos fãs de RPG (role-playing game), um tipo de jogo aonde os jogadores assumem papéis dos personagens dentro de um mundo de fantasia, decidem criar o próprio jogo aonde desejam se comunicar com mensagens secretas entre eles para que um time não possa tomar conhecimento da estratégia do outro. Sendo assim tendo a necessidade de um lugar onde pudessem criptografarem suas mensagens e descriptografarem as que lhe forem enviadas, com o objetivo de vencerem o jogo. 
 
 ## Introdução
 
@@ -34,24 +29,27 @@ criptografia, como a cifra de Vigenère, e tem aplicação no sistema ROT13.
 
 ## Objetivos
 
-O objetivo principal de aprendizagem deste projeto é que você tenha sua
-primeira experiência construindo uma aplicação web, usando os seus
-conhecimentos de **User Experience Design** e de **JavaScript**. Isso
-inclui desenhar um produto pensando nos usuários, construir uma interface,
-escutar eventos básicos do DOM, escrever a lógica que cifra e descifra
-mensagens, realizar testes básicos que comprovem (e documentem) esta lógica,
-e finalmente manipular o DOM para que ele mostre e imprima os resultados.
+Projeto proposto para as alunas do bootcamp Laboratória da turma do primeiro semestre de 2019.
+O objetivo deste projeto foi de criar um programa que seria capaz de criptografar e descriptografar uma mensagem dado um número de deslocamento. Este programa foi desenvolvido pensando no usuário, usando conhecimentos de JavaScript e UX (user experience).
 
-Esperamos que neste projeto você possa pensar no usuário, entendendo quem ele
-é e suas necessidades. A ideia é que consiga entender o que o usuário
-necessita para criar o produto e o ajudar a resolver suas necessidades da
-melhor maneira possível.
+## Definição de usuário
 
-Também é esperado que você possa se organizar, tendo em conta o tempo e os
-recursos disponíveis. Essa é a primeira vez que avaliaremos suas soft skills,
-mas deve considerar que são habilidades que provavelmente já deve ter
-utilizado em diversas experiências em sua vida. O importante é que realize
-o projeto de forma integral.
+O usúario é um jogador de RPG que deseja criptografar e descriptografar mensagens de maneira fácil e rápida.
+
+## Fluoxograma de Blocos
+
+
+===========================================
+
+## Processo de desenvolvimento
+
+No processo de desenvolvimento a primeira etapa foi criar um fluoxograma de blocos pensando em como seria o fluxo do usuário e do sistema. Após isso, escrevemos um arquivo HTML onde foi pensado 
+
+
+
+
+Foi criado primeiramente um diagrama de blocos para entender o fluxo do sistema, e a estrutura de pastas e arquivos (mostrado abaixo). No arquivo HTML foi adicionado elementos para receber os dados digitados pelo usuário, e no arquivo JavaScript os dados foram captados e manipulados para realizar a criptografia e descriptografia da mensagem. Uma vez concluído, o HTML foi incrementado, assim como o CSS, usando como tema uma história que justificasse a necessidades do usuário em criptografar uma mensagem.
+Um arquivo de testes foi criado no final do processo,seguindo as orientações dos mentores. O intuito foi usar dados que poderiam ser considerados criticos e encontrar possíveis erros, tais como valores nulos, números negativo, números com casas decimais muito grande entre outros. Com o código devidamente testado foi analisado a necessidade de melhorias, como a remoção de estruturas repetidas e a organização das funções para que pudesse ser lido de forma clara.
 
 ## Considerações gerais
 
@@ -141,62 +139,8 @@ para ver a descrição detalhada de cada _habilidade_ e cada _nível_.
 
 ***
 
-## Primeros passos
-
-1. Antes de mais nada, se assegure de ter um bom :pencil: editor de texto,
-  algo como [Code](https://code.visualstudio.com/) ou [Atom](https://atom.io/).
-2. Para executar os comando você precisará de um :shell: UNIX Shell,
-  que é um programa que interpreta linhas de comando (command-line interpreter) e
-  também deve ter git instalado. Se você usa um sistema operacional "UNIX-like",
-  como GNU/Linux ou MacOS, você já tem um _shell_ (terminal) instalado (e
-  provavelmente o `git` também). Se você usa Windows você pode usar o
-  [Git bash](https://git-scm.com/download/win), embora seja recomendado que
-  você teste :penguin: GNU/Linux.
-3. Faça seu próprio :fork_and_knife: [fork](https://help.github.com/articles/fork-a-repo/)
-  do repositório. Seus _mentores_ compartilharão com você um _link_ para um repositório privado e te darão acesso a este repositório.
-4. :arrow_down: [Clone](https://help.github.com/articles/cloning-a-repository/)
-  o _fork_ para seu computador (cópia local).
-5. Let's Code ! :rocket:
-
-***
-
-## Dicas
-
-A seguir um vídeo do Daniel que te ajudará a entender a fórmula matemática
-usada pela Cifra de César e algumas coisas mais que deve saber para resolver
-o seu projeto. Escute com atenção e siga seus conselhos ! :)
-
-[![Dicas Cifra de César](https://img.youtube.com/vi/utiLWBXmNQU/0.jpg)](https://www.youtube.com/watch?v=utiLWBXmNQU)
-
-Também compartilhamos com vocês mais informações sobre o que foi explicado no
-vídeo anterior:
-
-* [Aprenda mais sobre `charCodeAt()`](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/String/charCodeAt)
-* [Aprenda mais sobre `String.fromCharCode()`](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/String/fromCharCode)
-* [Aprenda mais sobre `ASCII`](http://conceptodefinicion.de/ascii/)
 
 
-Estas são algumas dicas que podem te ajudar na organização e relização do seu
-projeto, tendo em conta o desenvolvimento de suas _habilidades socioemocionais_:
-
-* Para começar, realize a organização de seu projeto. Veja quais recursos você
-  tem disponíveis e o tempo que tem para completar o desafio.
-* Se tiver algo que você não saiba, pergunte e tente entender o problema; pode
-  começar com uma busca no google, depois consultando seu squad e por último a
-  seus coaches. Se existe algo que eu não sei, outra pessoa pode me ajudar. O
-  aprendizado é um processo colaborativo.
-* Assim que começar a avançar em seu projeto, peça feedbacks. Suas companheiras
-  podem ter excelentes ideias ou formas de resolver o projeto que podem te ajudar.
-* Quando se deparar com um problema, busque alternativas e, para isso, consulte
-  várias fontes.
-* Se você perceber que já faz muito tempo que está presa em detalhes, pare e
-  priorize o que é mais importante. Os projetos têm tempo limitado e você deve
-  saber administrá-lo.
-* Trabalhe em equipe, pergunte e tente completar o projeto sem se render.
-* Prepare sua apresentação. Se não consigo passar minhas ideiais aos demais,
-  não será possível apreciar todo o esforço e trabalho investido.
-
-## Checklist
 
 ### Parte Obrigatória
 

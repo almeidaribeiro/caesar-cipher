@@ -2,88 +2,117 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width">
+    <title>Cipher</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 
   </head>
   <body background="https://thumbs.gfycat.com/AmbitiousElaborateDromedary-poster.jpg">
-    <div id="root"> 
+
+  <div class= "title"> 
+    <h1>Cipher</h1>
+  </div>
+
+  <div class="container">
+      
+    <div id="cipher">
+
+      <form 
+        name="message" 
+        id="textMessage" 
+        onsubmit="event.preventDefault()" >
         
-    <div class= "title"> 
-      <h1>Cipher</h1>
-    </div>
+        <p>Qual a sua mensagem?</p> 
+
+        <input
+          id="textLetter"
+          type="text"
+          required
+          oninvalid="this.setCustomValidity('Digite a sua mensagem aqui')"
+          oninput="this.setCustomValidity('')" 
+          name="textMessage"
+          placeholder="Digite sua mensagem aqui"
+          autocomplete="off">
+
+        <p> Informe seu número chave:</p>
+
+        <input 
+          id = "textNumber"
+          type="text"
+          required
+          oninvalid="this.setCustomValidity('Digite seu número chave aqui, este deve ser positivo')"
+          oninput="this.setCustomValidity('')" 
+          name="keyNumber"
+          pattern="\d+" 
+          placeholder="Digite o numero aqui"
+          autocomplete="off">
+        <br></br>
         
-    <div class="container">
-              
-      <div id="cipher">
-        <form name="message" id="textMessage"  onsubmit="event.preventDefault()">
-         
-          <p>Insira sua mensagem aqui:</p> 
         
-          <input
-            type="text"
-            name="textMessage"
-            required placeholder="Digite sua mensagem aqui"
-            oninvalid="this.setCustomValidity('Digite sua mensagem')"
-            oninput="this.setCustomValidity('')">
-  
-          <p> Informe o deslocamento da mensagem:</p>
-        
-          <input 
-            type="text"
-            name="keyNumber"
-            pattern="\d+" 
-            required placeholder="Digite o numero aqui"
-            oninvalid="this.setCustomValidity('Digite um numero inteiro')"
-            oninput="this.setCustomValidity('')"/>
-          <br></br>
-                
-          <input 
-            class= "buttons" 
-            type="submit"
-            id= "encryptedMessage" 
-            value= "Cifrar"
-            onclick="cipherMessage()"/>
-          <br></br>
-        
+        <input 
+          class= "buttons" 
+          type="submit"
+          id= "encryptedMessage" 
+          value= "Cifrar"
+          onclick="cipherMessage()">
+        <br></br>
+
           <input 
             class= "buttons" 
             type="submit" 
             id="decryptedMessage"
             onclick="decipherMessage()" 
-            value= "Decifrar"/>
-          </form>
-          <br><br>
-          </div>
-        
-        <form  id="resultPanelCipher" hidden>
+            value= "Decifrar">
+        </form>
+        <br><br>
+        </div>
+
+        <form  
+          id="resultPanelCipher" 
+          onsubmit="event.preventDefault()" 
+          hidden>
+
           <p>Sua Mensagem Cifrada:</p> 
           <br></br>
           <br>
           <div id="resultCipher"></div>
           <br><br>
-          <input class= "buttons" type="submit" value= "Voltar"/>
+          <input 
+            class= "buttons" 
+            type="submit" 
+            value= "Voltar" 
+            onclick="goBackCipher()"/>
           <br>
         </form>
-        
-        <form id="resultPanelDecipher" hidden>
+
+        <form 
+          id="resultPanelDecipher" 
+          onsubmit="event.preventDefault()" 
+          hidden>
+
           <p>Sua Mensagem Decifrada:</p> 
           <br><br>
           <br>
           <div id="resultDecipher"></div> 
           <br><br>
-          <input class= "buttons" type="submit" value= "Voltar"/>
+
+          <input 
+            class= "buttons" 
+            type="submit" 
+            value= "Voltar" 
+            onclick="goBackDecipher()"/>
           <br>
         </form>
         </div>
-        
+
         </div>
-        
-        </div>
+
     <script src="cipher.js"></script>
-    <script src="index.js"></script>
+
+    <script src="script.js"></script>
+
+    <script src="tests.js"></script>
   </body>
-</html>
+</html> 
