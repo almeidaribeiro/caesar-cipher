@@ -30,11 +30,11 @@ O usúario é um jogador de RPG que deseja criptografar e descriptografar mensag
 
 ## Fluoxograma de Blocos
 
-![Fluoxograma](/caesar-cipher/Images/fluxogramacipher.png)
+![Fluoxograma](Images/fluxogramacipher.png)
 
 ### Desenho do projeto
 
-![Desenho do Projeto](/caesar-cipher/Images/desenhoprojeto.png)
+![Desenho do Projeto](Images/desenhoprojeto.png)
 
 
 ## Parte obrigatória
