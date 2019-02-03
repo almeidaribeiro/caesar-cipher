@@ -14,7 +14,15 @@ seguindo um número fixo para essa subtituição.
 ## Objetivos
 
 Projeto proposto para as alunas do bootcamp Laboratória da turma do primeiro semestre de 2019.
-O objetivo deste projeto foi de criar um programa capaz de criptografar e descriptografar uma mensagem dado um número de deslocamento. Este programa foi desenvolvido pensando no fluxo do usuário, usando JavaScript.
+
+O objetivo deste projeto foi de criar um produto capaz de criptografar e descriptografar uma mensagem dado um número de deslocamento e desenvolvido usando conhecimentos de User Experience Design e de JavaScript.
+Dessa forma deveriamos:
+- criá-lo pensando no usuário,
+- criar uma interface,
+- executar eventos básicos do DOM, 
+- manipular o DOM para que ele imprima os resultados na tela,
+- escrever uma lógica que cifra e decifra as mensagens inseridas pelo usuário,
+- fazer testes que comprovem o funcionamento do código. 
 
 ## Definição de usuário
 
@@ -26,6 +34,19 @@ O usúario é um jogador de RPG que deseja criptografar e descriptografar mensag
 - Html: definição dos elementos na tela.
 - Css: apresentação dos elementos na tela.
 - JavaScript: manipulação dos elementos na tela.
+
+
+```text
+./
+├── .gitignore
+├── README.md
+├── src
+│   ├── cipher.js
+│   ├── index.html
+│   ├── index.js
+│   ├── style.css
+│   └── tests.js
+```
 
 
 ## Fluoxograma de Blocos
