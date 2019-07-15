@@ -1,5 +1,5 @@
 
-![Fluoxograma](Images/screen.png)
+![screen](Images/screen.png)
 
 # Cifra de César
 
